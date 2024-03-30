@@ -46,18 +46,15 @@ function Blog() {
         <SearchFilterSortSection>
           <SearchByField />
           <div className="flex h-full items-center gap-4">
-            <>
-              <span>Filtra in base all autore</span>
-              <Filter
-                options={autori?.map((autore) => {
-                  return {
-                    filter: autore.id,
-                    option: autore.nome + ' ' + autore.cognome,
-                  };
-                })}
-                filterBy={'filterAuthors'}
-              />
-            </>
+            <Filter
+              options={autori?.map((autore) => {
+                return {
+                  filter: autore.id,
+                  option: autore.nome + ' ' + autore.cognome,
+                };
+              })}
+              filterBy={'filterAuthors'}
+            />
 
             <Sort
               options={[
