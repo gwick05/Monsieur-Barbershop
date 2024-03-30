@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useUserLocation } from '../hooks/useUserLocation';
 import { useSedi } from '../hooks/useSedi';
-import 'leaflet/dist/leaflet.css';
 import Spinner from '../ui/Spinner';
 import Map from '../features/contatti/Map';
 import ListaContatti from '../features/contatti/ListaContatti';
