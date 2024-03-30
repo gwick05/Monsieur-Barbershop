@@ -100,6 +100,7 @@ function Signup() {
           >
             <Label>Email</Label>
             <input
+              defaultValue={''}
               className="rounded-md px-2 py-1 text-neutral-700 ring-1 ring-neutral-700 ring-opacity-50 focus:outline-none focus:ring-opacity-100 "
               type="email"
               name="email"
@@ -119,6 +120,7 @@ function Signup() {
           >
             <Label>Password</Label>
             <input
+              defaultValue={''}
               className="rounded-md px-2 py-1 text-neutral-700 ring-1 ring-neutral-700 ring-opacity-50 focus:outline-none focus:ring-opacity-100 "
               type="password"
               name="password"
