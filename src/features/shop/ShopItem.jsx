@@ -7,6 +7,7 @@ import { IoCartOutline } from 'react-icons/io5';
 import { useCarrelloContext } from '../../context/CarrelloContext';
 import Button from '../../ui/Button';
 import IncreaseDecreaseItemComponent from '../../ui/IncreaseDecreaseItemComponent';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function ShopItem({ item }) {
   const { photos, description, name, id } = item;
@@ -34,7 +35,7 @@ function ShopItem({ item }) {
       <div className="flex w-full flex-col gap-4 rounded-lg border-2 border-neutral-500  border-opacity-10 bg-neutral-300 px-3 py-4 dark:border-opacity-20   dark:bg-neutral-700">
         <div className="relative h-60 w-full text-neutral-700">
           <div className="h-full w-full">
-            <img
+            <LazyLoadImage
               src={photos[currPhoto]}
               alt="product-photo"
               className="h-full w-full"

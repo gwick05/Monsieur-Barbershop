@@ -5,6 +5,7 @@ import Spinner from '../../ui/Spinner';
 import calculateMedianDistanceBetweenDates from '../../utils/helpers/calculateMedianDistanceBetweenDates';
 import { findItemWithMostOccurrences } from '../../utils/helpers/findItemWithMostOccurrences';
 import Stat from './Stat';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function StatsPrenotazioni() {
   const { prenotazioniPassate, error, isLoading, sedi, barbieri, servizi } =
@@ -36,7 +37,7 @@ function StatsPrenotazioni() {
     return prenotazioniPassate.length !== 0 ? (
       <div className="grid w-full grid-cols-[30%_auto_25%] grid-rows-[80px_80px_250px] justify-items-center gap-2">
         <Stat label="Barbiere preferito" className={'col-span-1 row-span-full'}>
-          <img
+          <LazyLoadImage
             src={preferredBarber?.image}
             alt="Logo"
             className="h-[350px] rounded-lg"

@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useCarrelloContext } from '../../context/CarrelloContext';
 import Button from '../../ui/Button';
 import IncreaseDecreaseItemComponent from '../../ui/IncreaseDecreaseItemComponent';
@@ -7,7 +8,7 @@ function ItemCarrello({ item }) {
   return (
     <>
       <div className="flex flex-col items-center justify-center  border-b border-neutral-200 border-opacity-50  px-2 px-2 py-2 dark:border-neutral-600">
-        <img
+        <LazyLoadImage
           src={item.photos[0]}
           alt="immagine-prodotto"
           className="h-32 w-28 rounded-lg"

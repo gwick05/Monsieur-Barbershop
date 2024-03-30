@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { usePrenotazioneContext } from '../../context/PrenotazioneContext';
 
 function Servizio({ servizio }) {
@@ -8,7 +9,7 @@ function Servizio({ servizio }) {
       className={`flex cursor-pointer flex-col items-center ${isSelected ? 'scale-110' : ''} transition-transform duration-200 hover:scale-110`}
       onClick={() => selectServizio(servizio)}
     >
-      <img
+      <LazyLoadImage
         className={`h-48 w-60 rounded-lg  shadow-lg  ${isSelected ? 'ring-2 ring-orange-400' : ''}  `}
         src={servizio.foto}
         alt="sede"
