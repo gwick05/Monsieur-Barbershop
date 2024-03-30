@@ -9,3 +9,4 @@ Single page application made for an immaginary barbershop named "Monsieur". This
 - React-Router
 - Tailwind
 - Context API
+- Supabase

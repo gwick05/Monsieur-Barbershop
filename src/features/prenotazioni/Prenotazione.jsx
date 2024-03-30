@@ -1,5 +1,6 @@
 import Button from '../../ui/Button';
 import MiniSpinner from '../../ui/MiniSpinner';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Prenotazione({
   isDeleting,
@@ -16,7 +17,8 @@ function Prenotazione({
     <div className="flex">
       <div className="flex items-center gap-20">
         <div className=" flex w-80 flex-col items-center">
-          <img
+          <LazyLoadImage
+            effect="blur"
             className="h-96 rounded-md border-2 border-neutral-500 border-opacity-20   shadow-md"
             src={barbiere.image}
             alt="barber"
