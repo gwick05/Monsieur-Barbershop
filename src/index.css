@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply rounded-md bg-neutral-300 dark:bg-neutral-700;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-md  bg-neutral-700 dark:bg-neutral-500;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-500 dark:bg-neutral-300;
+  }
+}
+
+.active {
+  @apply font-bold text-orange-400;
+}
+
+.leaflet-container {
+  @apply h-full w-full rounded-lg shadow-md;
+}
