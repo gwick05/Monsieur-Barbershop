@@ -8,7 +8,7 @@ function ProtectedAuth({ children }) {
 
   useEffect(
     function () {
-      if (isAuthenticated && !isLoading) navigate('/');
+      if (isAuthenticated && !isLoading) navigate('/home');
     },
     [isLoading, isAuthenticated, navigate],
   );
