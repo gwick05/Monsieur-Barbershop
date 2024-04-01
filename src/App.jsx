@@ -40,15 +40,8 @@ function App() {
             <PrenotazioneContextProvider>
               <Routes>
                 <Route element={<AppLayout />}>
-                  <Route index element={<Navigate replace to="home" />} />
-                  <Route
-                    path="home"
-                    element={
-                      <ProtectedRoute>
-                        <Home />
-                      </ProtectedRoute>
-                    }
-                  />
+                  <Route index element={<Navigate replace to="login" />} />
+                  <Route path="home" element={<Home />} />
 
                   <Route path="shop" element={<Shop />} />
                   <Route path="carrello" element={<Carrello />} />
